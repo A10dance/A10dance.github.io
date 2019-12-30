@@ -28,7 +28,8 @@ function enableBT() {
     // enable the highlighted flag, and restart Chrome for now.
 
     navigator.bluetooth.requestDevice({
-            acceptAllDevices: true
+            acceptAllDevices: true,
+            optionalServices: ['battery_service']
         })
         .then(device => {
             alert(device);
