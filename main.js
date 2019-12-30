@@ -44,7 +44,7 @@ function markA10dance() {
 
 
 function enableBT() {
-
+    alert("hi");
     console.log('Requesting any Bluetooth Device...');
     navigator.bluetooth.requestDevice({
             // filters: [...] <- Prefer filters to save energy & show relevant devices.
