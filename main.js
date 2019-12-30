@@ -31,7 +31,8 @@ function enableBT() {
             acceptAllDevices: true,
         })
         .then(device => {
-            alert(device);
+            console.log(device);
+            alert('Name: ' + device.name);
         })
         .catch(error => {
             alert(error);
